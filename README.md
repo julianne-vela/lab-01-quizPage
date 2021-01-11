@@ -10,7 +10,7 @@ OUTCOMES:
 - The user should be able to see their final results after completing the quiz. 
 
 
-HTML Setup: 
+<!-- HTML Setup: 
 - Quiz title and some cool formatting
 - Some information about the quiz and instructions for completing it. 
     - Intro section about topic
@@ -20,7 +20,7 @@ HTML Setup:
 - A button
     - So the user can start the quiz
 - A secret empty div box
-    - Why? To display the results to the user
+    - Why? To display the results to the user -->
 
 CSS Setup: 
     - Choose one or two fonts
