@@ -26,8 +26,8 @@ CSS Setup:
     - Choose one or two fonts
     - Color Palette
 
-JAVASCRIPT: 
-1) Grab DOM Elements
+<!-- JAVASCRIPT: 
+<!-- 1) Grab DOM Elements
     - Button
     - Secret Div
 2) Add event listeners
@@ -37,4 +37,4 @@ JAVASCRIPT:
     - launch a confirmation
     - Launch first name prompt and then last name prompt
     - Launch series of question prompts
-    - Display results of quiz to user on the website
+    - Display results of quiz to user on the website -->
