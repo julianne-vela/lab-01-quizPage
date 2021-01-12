@@ -38,10 +38,18 @@ details {
     flex-direction: row;
     justify-content: center;
     margin-top: 10px;
+    padding: 10px 30px;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 1.5rem;
+    background-color: rgba(165, 1, 4, .7);
+    color: var(--color4);
+    border: 3px solid var(--color1);
+    border-radius: 5px;
 }
 
 section {
     font-family: 'Yeon Sung', cursive;
+    font-size: 1.2rem;
     background-color: var(--color5);
     width: 800px;
     max-width: 80%;
@@ -63,6 +71,17 @@ header {
     box-shadow: var(--shadow);
 }
 
+#quiz-button {
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--color2);
+    color: var(--color5);
+    border: 5px solid var(--color1);
+}
+
 .header-transparent {
     background-color:rgba(89, 0, 4, .6);
     color: var(--color5);
@@ -77,12 +96,19 @@ header {
     align-items: center;
 }
 
+p {
+    margin: 8px;
+}
+
 .lists {
     display: flex;
     flex-direction: row;
     flex-wrap: row;
     justify-content: space-evenly;
     align-items: center;
+    background-color: rgba(165, 1, 4, .4);
+    padding: 5px 30px;
+    border-radius: 10px;
 }
 
 .cool-facts {
@@ -90,7 +116,8 @@ header {
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    width: 500px;
+    width: 450px;
+    height: 100%;
 }
 
 .top-5 {
@@ -98,6 +125,7 @@ header {
     flex-direction: column;
     justify-content: left;
     align-items: center;
+    height: 100%;
 }
 
 ul {
@@ -117,16 +145,9 @@ h1 {
     animation: pulse 5s infinite ease-in-out;
 }
 
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
+/* .hidden {
+    display: none;
+} */
   
   @keyframes pulse {
     20% {
