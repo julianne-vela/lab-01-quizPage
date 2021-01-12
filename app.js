@@ -19,10 +19,10 @@ quizButton.addEventListener('click', () => {
     if (!confirmation) return;
 
     const firstName = prompt('What is your characters first name?');
-    const lastName = prompt('What is your characters last name?');
+    const lastName = prompt(`What is ${firstName}\'s last name?`);
     const firstAnswer = prompt('Does Vin Diesel play D&D?');
     const secondAnswer = prompt('Was Dungeons and Dragons initially created in 2000?');
-    const thirdAnswer = prompt('Dont you want to play Dungeons and Dragons now?');
+    const thirdAnswer = prompt('Don\'t you want to play Dungeons and Dragons now?');
 
     if (countAsAYes(firstAnswer)) correctAnswers++;
     if (!countAsAYes(secondAnswer)) correctAnswers++;
