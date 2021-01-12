@@ -1,4 +1,4 @@
-# lab-01-quizPage
+<!-- # lab-01-quizPage
 
 Create an About Me quiz so that visitors can answer different questions and receive a final score of their correct answers. 
 
@@ -7,7 +7,7 @@ OUTCOMES:
 - There should be a confirmation
 - There should be a first name and last name prompt
 - There should be at least 3 question prompts
-- The user should be able to see their final results after completing the quiz. 
+- The user should be able to see their final results after completing the quiz.  -->
 
 
 <!-- HTML Setup: 
@@ -22,9 +22,9 @@ OUTCOMES:
 - A secret empty div box
     - Why? To display the results to the user -->
 
-CSS Setup: 
+<!-- CSS Setup: 
     - Choose one or two fonts
-    - Color Palette
+    - Color Palette -->
 
 <!-- JAVASCRIPT: 
 <!-- 1) Grab DOM Elements

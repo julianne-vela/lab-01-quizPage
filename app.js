@@ -4,8 +4,8 @@ import { countAsAYes } from './utils.js';
 
 const quizButton = document.getElementById('quiz-button');
 const resultsDiv = document.getElementById('results-div');
-// const infoSection = document.getElementById('info');
-// const listSection = document.getElementById('lists');
+const infoSection = document.getElementById('info');
+const listSection = document.getElementById('lists');
 
 // initialize state
 let correctAnswers = 0;
@@ -29,6 +29,11 @@ quizButton.addEventListener('click', () => {
     if (countAsAYes(thirdAnswer)) correctAnswers++;
 
     const resultsStr = `Hello ${firstName} ${lastName}! Congrats! You've completed the quiz and got ${correctAnswers} answers correct!`;
+
+    infoSection.classList.toggle('hidden');
+    listSection.classList.toggle('hidden');
+    quizButton.classList.toggle('hidden');
+    resultsDiv.classList.toggle('hidden');
 
     resultsDiv.textContent = resultsStr;
 });
