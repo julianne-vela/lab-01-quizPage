@@ -9,43 +9,69 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Yeon+Sung&display=swap"
+        rel="stylesheet">
+    <title>A history of Dungeons and Dragons</title>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
-        </div>
+        <div class="header-transparent">The History of Dungeons & Dragons</div>
     </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="assets/alchemy-logo.png"/>
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <content>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
-
+        <details>
+            <summary> Instructions for Quiz </summary>
+            <ol>
+                <li>Read the information below about D&D</li>
+                <li>Click the button to start the quiz</li>
+                <li>View your results at the bottom once completed</li>
+            </ol>
+        </details>
+        <section id="info" class="info">
+            <p>Dungeons & Dragons (commonly abbreviated as D&D or DnD) is a fantasy tabletop role-playing game (RPG)
+                originally designed by Gary Gygax and Dave Arneson. It was first published in 1974 by Tactical Studies
+                Rules, Inc. (TSR). It has been published by Wizards of the Coast (now a subsidiary of Hasbro) since
+                1997.</p>
+            <p>The game was derived from miniature wargames, with a variation of the 1971 game Chainmail serving as the
+                initial rule system. D&D's publication is commonly recognized as the beginning of modern role-playing
+                games and the role-playing game industry</p>
+            <p>D&D departs from traditional wargaming by allowing each player to create their own character to play
+                instead of a military formation. These characters embark upon imaginary adventures within a fantasy
+                setting. A Dungeon Master (DM) serves as the game's referee and storyteller, while maintaining the
+                setting in which the adventures occur, and playing the role of the inhabitants of the game world. The
+                characters form a party and they interact with the setting's inhabitants and each other. Together they
+                solve dilemmas, engage in battles, explore, and gather treasure and knowledge. In the process, the
+                characters earn experience points (XP) in order to rise in levels, and become increasingly powerful over
+                a series of separate gaming sessions.</p>
         </section>
+        <section id="lists" class="lists">
+            <div class="top-5">
+                <h1>5 Classes in D&D</h1>
+                <ol>
+                    <li>Arcane Trickster (Rogue)</li>
+                    <li>Path of the Totem Warrior (Barbarian)</li>
+                    <li>College of Lore (Bard)</li>
+                    <li>School of Divination (Wizard)</li>
+                    <li>Eldritch Knight (Fighter)</li>
+                </ol>
+            </div>
+            <div class="cool-facts">
+                <h1>Some cool facts about DnD:</h1>
+                <ul>
+                    <li>D&D campaigns can last several years (mine has been going on for 2 years).</li>
+                    <li>There are tons of celebrities who are fans, such as Vin Diesel, Terry Crews, Jow Manganiello,
+                        and
+                        Jon Favreau.</li>
+                    <li>There is a D&D stage musical created by the Austrailian Filk music group Tripod.</li>
+                    <li>You can play literally any character you can dream up in your imagination.</li>
+                </ul>
+            </div>
+        </section>
+        <button id="quiz-button">Take the Quiz!</button>
+        <div id="results-div" class="hidden"></div>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
 
     <script type="module" src="app.js"></script>

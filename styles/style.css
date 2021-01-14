@@ -1,25 +1,27 @@
 
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-/* 
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
+    /* /* SCSS RGB */
+    --color1: rgba(252, 186, 4, 1);
+    --color2: rgba(165, 1, 4, 1);
+    --color3: rgba(89, 0, 4, 1);
+    --color4: rgba(37, 0, 1, 1);
+    --color5: rgba(243, 243, 243, 1);
+
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
-    --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: var(--color5);
 }
 
 main {
@@ -27,76 +29,132 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+}
+
+details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 1.5rem;
+    background-color: rgba(165, 1, 4, .7);
+    color: var(--color4);
+    border: 3px solid var(--color1);
+    border-radius: 5px;
 }
 
 section {
+    font-family: 'Yeon Sung', cursive;
+    font-size: 1.2rem;
     background-color: var(--color5);
-    width: 1000px;
+    width: 800px;
     max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    margin: 20px;
 }
 
 header {
+    font-family: 'Cinzel', serif;
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/dice-pile.jpg);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
 
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
-
-
-h2 {
-    font-size: 1.8rem;
+#quiz-button {
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
     font-weight: bold;
+    text-align: center;
+    background-color: var(--color2);
+    color: var(--color5);
+    border: 5px solid var(--color1);
+    margin-bottom: 20px;
 }
 
-.gutter-right {
-    margin-right: 20px;
+#results-div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(89, 0, 4, .8);
+    color: var(--color5);
+    border: var(--color1) 10px solid;
+    border-radius: 35px;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header-transparent {
+    background-color:rgba(89, 0, 4, .6);
+    color: var(--color5);
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 8px;
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(165, 1, 4, .4);
+    padding: 5px 30px;
+    border-radius: 10px;
+}
+
+.cool-facts {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    width: 450px;
+    height: 100%;
+}
+
+.top-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+}
+
+ul {
+    list-style: circle;
+}
+
+ol {
+    list-style: decimal;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .main-logo {
     animation: pulse 5s infinite ease-in-out;
 }
 
-header img {
-    height: var(--header-height);
-}
-
-
-
-content {
-    width: 80%;
-}
-
-p {
-    margin: var(--gutter);
-}
-  
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
+.hidden {
+    display: none;
 }
   
   @keyframes pulse {
